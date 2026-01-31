@@ -10,6 +10,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 [data-theme="light"] {
@@ -35,6 +37,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
     position: relative;
+    width: 100%;
 }
 
 /* Decorative Background Circles - Scrolling with content */
@@ -173,6 +176,7 @@ nav a:hover {
 .controls {
     display: flex;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .control-btn {
@@ -1525,8 +1529,28 @@ footer {
     }
 
     .control-btn {
-        padding: 6px 12px;
+        padding: 6px 10px;
         font-size: 0.7rem;
+    }
+
+    .controls {
+        gap: 8px;
+    }
+
+    header {
+        padding: 15px 15px;
+    }
+
+    body::before {
+        width: 300px;
+        height: 300px;
+        left: -100px;
+    }
+
+    body::after {
+        width: 300px;
+        height: 300px;
+        right: -100px;
     }
 }
 
