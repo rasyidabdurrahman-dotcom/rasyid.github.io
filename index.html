@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasyid | Data Portfolio</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <div class="custom-cursor"></div>
+
+    <!-- Sticky Header -->
+    <header id="header">
+        <div class="logo">RASYID.</div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-lang="en">Home</a><a href="#home" data-lang="id"
+                        style="display:none">Beranda</a></li>
+                <li><a href="#profile" data-lang="en">Profile</a><a href="#profile" data-lang="id"
+                        style="display:none">Profil</a></li>
+                <li><a href="#experience" data-lang="en">Experience</a><a href="#experience" data-lang="id"
+                        style="display:none">Pengalaman</a></li>
+                <li><a href="#projects" data-lang="en">Projects</a><a href="#projects" data-lang="id"
+                        style="display:none">Proyek</a></li>
+                <li><a href="#publications" data-lang="en">Publication</a><a href="#publications" data-lang="id"
+                        style="display:none">Publikasi</a></li>
+                <li><a href="#contact" data-lang="en">Contact</a><a href="#contact" data-lang="id"
+                        style="display:none">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button id="lang-toggle" class="control-btn">EN | ID</button>
+            <button id="theme-toggle" class="control-btn">🌓 MODE</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span data-lang="en">Hello, welcome to my</span>
+                <span data-lang="id" style="display:none">Halo, selamat datang di </span>
+                <br>
+                <span class="dynamic-text-container">
+                    <span id="dynamic-text"></span>
+                </span>
+                <br>
+                Portfolio
+            </h1>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="profile-grid">
+
+                <!-- Column 1: About & Education -->
+                <div class="profile-col col-left">
+                    <div class="glass-card about-card">
+                        <h3 data-lang="en">About Me</h3>
+                        <h3 data-lang="id" style="display:none">Tentang Saya</h3>
+                        <p data-lang="en">
+                            A Data Enthusiast at Universitas Padjadjaran focused on transforming complex datasets into
+                            strategic assets through statistical modeling and interactive visualization.
+                        </p>
+                        <p data-lang="id" style="display:none">
+                            Seorang Peminat Data di Universitas Padjadjaran yang berfokus pada transformasi dataset
+                            kompleks menjadi aset strategis melalui pemodelan statistik dan visualisasi interaktif
+                        </p>
+                    </div>
+
+                    <div class="glass-card education-card">
+                        <h3 data-lang="en">Education</h3>
+                        <h3 data-lang="id" style="display:none">Pendidikan</h3>
+                        <div class="edu-content">
+                            <img src="Assets_Logos/unpad.png" alt="Universitas Padjadjaran" class="edu-logo">
+                            <div class="edu-info">
+                                <h4 data-lang="en">Universitas Padjadjaran</h4>
+                                <h4 data-lang="id" style="display:none">Universitas Padjadjaran</h4>
+                                <p data-lang="en">Bachelor's Degree in Statistics<br>(2023–Present)</p>
+                                <p data-lang="id" style="display:none">S1 Statistika<br>(2023–Sekarang)</p>
+                            </div>
+                        </div>
+                        <div class="gpa-pill">
+                            <span data-lang="en">GPA: 3.76 / 4.00</span>
+                            <span data-lang="id" style="display:none">IPK: 3.76 / 4.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Technical Skills -->
+                <div class="profile-col col-center">
+                    <div class="glass-card skills-card">
+                        <h3 data-lang="en">Technical Skills</h3>
+                        <h3 data-lang="id" style="display:none">Kecakapan Teknis</h3>
+                        <div class="skills-grid">
+                            <!-- Data Tools -->
+                            <div class="skill-item data-tool" data-name="Python"><img src="Assets_Logos/python.png"
+                                    alt="Python"></div>
+                            <div class="skill-item data-tool" data-name="R"><img src="Assets_Logos/r.png" alt="R"></div>
+                            <div class="skill-item data-tool" data-name="Colab"><img src="Assets_Logos/gcolab.png"
+                                    alt="Google Colab">
+                            </div>
+                            <div class="skill-item data-tool" data-name="Github"><img src="Assets_Logos/github.png"
+                                    alt="GitHub"></div>
+                            <div class="skill-item data-tool" data-name="SQL"><img src="Assets_Logos/mysql.png"
+                                    alt="MySQL"></div>
+                            <div class="skill-item data-tool" data-name="MariaDB"><img src="Assets_Logos/mariadb.png"
+                                    alt="MariaDB"></div>
+                            <div class="skill-item data-tool" data-name="PHP"><img src="Assets_Logos/phpmyadmin.png"
+                                    alt="phpMyAdmin">
+                            </div>
+                            <div class="skill-item data-tool" data-name="Tableau"><img src="Assets_Logos/tableau.png"
+                                    alt="Tableau"></div>
+                            <div class="skill-item data-tool" data-name="PowerBI"><img src="Assets_Logos/powerbi.png"
+                                    alt="PowerBI"></div>
+                            <div class="skill-item data-tool" data-name="SPSS"><img src="Assets_Logos/ibm.png"
+                                    alt="IBM"></div>
+                            <div class="skill-item data-tool" data-name="Sheets"><img src="Assets_Logos/gsheet.png"
+                                    alt="Google Sheets">
+                            </div>
+                            <div class="skill-item data-tool" data-name="Streamlit"><img
+                                    src="Assets_Logos/streamlit.png" alt="Streamlit">
+                            </div>
+
+                            <!-- Design Tools -->
+                            <div class="skill-item design-tool" data-name="CapCut"><img src="Assets_Logos/capcut.png"
+                                    alt="CapCut"></div>
+                            <div class="skill-item design-tool" data-name="Figma"><img src="Assets_Logos/figma.png"
+                                    alt="Figma"></div>
+                            <div class="skill-item design-tool" data-name="KineMaster"><img
+                                    src="Assets_Logos/kinemaster.png" alt="KineMaster">
+                            </div>
+                            <div class="skill-item design-tool" data-name="Canva"><img src="Assets_Logos/canva.png"
+                                    alt="Canva"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Portrait -->
+                <div class="profile-col col-right">
+                    <div class="portrait-wrapper">
+                        <img src="Profile/hero-rasyid.png" alt="Rasyid" class="profile-portrait">
+                        <div class="portrait-info">
+                            <h2 class="portrait-name">Rasyid Abdurrahman</h2>
+                            <p class="portrait-title" data-lang="en">Statistics Student | Data Analyst</p>
+                            <p class="portrait-title" data-lang="id" style="display:none">Mahasiswa Statistika | Analis
+                                Data</p>
+                            <a href="#contact" class="connect-link" data-lang="en">Let's Connect ↓</a>
+                            <a href="#contact" class="connect-link" data-lang="id" style="display:none">Mari Terhubung
+                                ↓</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <h2 class="section-title" data-lang="en">Experience</h2>
+            <h2 class="section-title" data-lang="id" style="display:none">Pengalaman</h2>
+
+            <div class="experience-grid">
+                <!-- Card 1 -->
+                <div class="experience-card" data-bg="Experience/studentwelfare.png">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Student Welfare Staff</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Staf Kesejahteraan Mahasiswa
+                        </h3>
+                        <p class="experience-org">BE Himasta Unpad (Kabinet Katalisator Harmoni)</p>
+                        <p class="experience-period">Jan 2025 – Dec 2025</p>
+                        <p class="experience-desc" data-lang="en">Managed student welfare programs including scholarship
+                            dissemination, graduation preparation, and support services.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Mengelola program kesejahteraan
+                            mahasiswa termasuk penyebaran informasi beasiswa, persiapan wisuda, dan layanan dukungan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="experience-card" data-bg="Experience/fusi.png">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Head of External Relations</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Kepala Hubungan Eksternal</h3>
+                        <p class="experience-org">FUSI Himasta FMIPA Unpad</p>
+                        <p class="experience-period">Jan 2025 – Dec 2025</p>
+                        <p class="experience-desc" data-lang="en">Managed partnerships with external organizations and
+                            strengthened communication strategies.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Mengelola kemitraan dengan
+                            organisasi eksternal dan memperkuat strategi komunikasi.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="experience-card" data-bg="Experience/statis.png">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Vice Head</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Wakil Ketua</h3>
+                        <p class="experience-org">STATIS Student Club</p>
+                        <p class="experience-period">Jan 2025 – Dec 2025</p>
+                        <p class="experience-desc" data-lang="en">Coordinated monthly practices, internal matches, and
+                            overall club operations.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Mengkoordinasikan latihan
+                            bulanan, pertandingan internal, dan operasional klub secara keseluruhan.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="experience-card" data-bg="Experience/pojokstatistik.png">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Statistics Agent</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Agen Statistik</h3>
+                        <p class="experience-org">Pojok Statistik (BPS)</p>
+                        <p class="experience-period">June 2025 – August 2025</p>
+                        <p class="experience-desc" data-lang="en">Data dissemination and statistical consulting services
+                            within the campus environment.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Diseminasi data dan layanan
+                            konsultasi statistik di lingkungan kampus.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="experience-card" data-bg="Experience/statisticsday.png">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Design & Documentation Staff</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Staf Desain & Dokumentasi</h3>
+                        <p class="experience-org">Statistics Day Elevora 2025</p>
+                        <p class="experience-period">2025</p>
+                        <p class="experience-desc" data-lang="en">Handled visual branding, event documentation, and
+                            creative production for national-scale statistical events.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Menangani branding visual,
+                            dokumentasi acara, dan produksi kreatif untuk acara statistik berskala nasional.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="experience-card" data-bg="Experience/relation.jpeg">
+                    <div class="experience-content">
+                        <h3 class="experience-title" data-lang="en">Relations & Communications Staff</h3>
+                        <h3 class="experience-title" data-lang="id" style="display:none">Staf Hubungan & Komunikasi</h3>
+                        <p class="experience-org">BE Himasta Unpad (Kabinet Progresif Optimal)</p>
+                        <p class="experience-period">Jan 2024 – Dec 2024</p>
+                        <p class="experience-desc" data-lang="en">Facilitated communication between internal and
+                            external stakeholders to ensure organizational alignment.</p>
+                        <p class="experience-desc" data-lang="id" style="display:none">Memfasilitasi komunikasi antara
+                            pemangku kepentingan internal dan eksternal untuk memastikan keselarasan organisasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <h2 class="section-title" data-lang="en">Projects</h2>
+            <h2 class="section-title" data-lang="id" style="display:none">Proyek</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1: HIV Surveillance -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2025 • R Shiny, Leaflet</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Geospatial</span> HIV
+                                Surveillance</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span
+                                    class="text-accent">Geospatial</span> Surveilans HIV</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper">
+                            <img src="Projects/hiv.png" alt="HIV Surveillance" class="project-pop-img">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Developed an interactive geospatial platform to
+                            monitor and analyze HIV trends in West Java.</p>
+                        <p class="project-description" data-lang="id" style="display:none">Membangun platform geospasial
+                            interaktif untuk memantau tren HIV di Jawa Barat.</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Analyze and visualize spread patterns.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Analisis pola penyebaran.</p>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://nabielherdiana.shinyapps.io/UTS_Kelompok_Narafa/" target="_blank"
+                                class="btn-grid">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Pneumonia Risk -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2025 • R, GeoDA, Spatial Stats</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Epidemiology</span>
+                                Pneumonia Risk</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span
+                                    class="text-accent">Epidemiologi</span> Risiko Pneumonia</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper">
+                            <img src="Projects/epidem.png" alt="Pneumonia Risk" class="project-pop-img">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Mapping toddler pneumonia distribution and risk
+                            factors in West Java (2021-2024).</p>
+                        <p class="project-description" data-lang="id" style="display:none">Memetakan distribusi
+                            pneumonia balita dan faktor risikonya (2021-2024).</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Identify risk factor hotspots.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Identifikasi hotspots faktor risiko.</p>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://rasyidabdurrahman.shinyapps.io/DashboardEpidem/#" target="_blank"
+                                class="btn-grid">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Data Storytelling -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2025 • Excel, Canva</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Storytelling</span>
+                                Satisfaction Insights</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span
+                                    class="text-accent">Storytelling</span> Wawasan Kepuasan</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper multi-thumb">
+                            <img src="Projects/storytelling1.png" alt="Storytelling 1" class="project-pop-img">
+                            <img src="Projects/storytelling2.png" alt="Storytelling 2"
+                                class="project-pop-img secondary-pop">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Transformed raw RSHS survey data into visual
+                            narratives and booklets.</p>
+                        <p class="project-description" data-lang="id" style="display:none">Mengubah data survei RSHS
+                            menjadi narasi visual dan buklet.</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Enhance stakeholder engagement.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Meningkatkan keterlibatan pemangku kepentingan.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Project 4: Relational Systems -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2023 • MySQL, 3NF</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Systems</span> Optimized
+                                Relational</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span
+                                    class="text-accent">Sistem</span> Relasional Teroptimasi</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper multi-thumb">
+                            <img src="Projects/relational1.png" alt="Relational 1" class="project-pop-img">
+                            <img src="Projects/relational2.png" alt="Relational 2"
+                                class="project-pop-img secondary-pop">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Implemented structured relational database using
+                            3NF for optimized integrity.</p>
+                        <p class="project-description" data-lang="id" style="display:none">Implementasi database
+                            relasional terstruktur dengan 3NF.</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Create scalable and normalized architecture.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Membuat arsitektur data ternormalisasi.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Project 5: Deep Learning -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2025 • Python, TensorFlow</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Deep Learning</span> Cat
+                                Recognition</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span class="text-accent">Deep
+                                    Learning</span> Pengenalan Kucing</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper multi-thumb">
+                            <img src="Projects/deep1.png" alt="Deep Learning 1" class="project-pop-img">
+                            <img src="Projects/deep2.png" alt="Deep Learning 2" class="project-pop-img secondary-pop">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Computer vision system utilizing EfficientNetV2-S
+                            for classification.</p>
+                        <p class="project-description" data-lang="id" style="display:none">Sistem computer vision
+                            EfficientNetV2-S untuk klasifikasi.</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Develop high-accuracy classification model.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Mengembangkan model klasifikasi akurasi tinggi.</p>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://cat-breed-detector.streamlit.app/" target="_blank" class="btn-grid">Try The
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Data Mining -->
+                <div class="project-grid-card">
+                    <div class="card-header">
+                        <div class="title-meta">
+                            <div class="project-meta">2025 • Python, Scikit-Learn</div>
+                            <h3 class="project-title" data-lang="en"><span class="text-accent">Analytics</span> Global
+                                Health Mining</h3>
+                            <h3 class="project-title" data-lang="id" style="display:none"><span
+                                    class="text-accent">Analytics</span> Data Mining Kesehatan</h3>
+                        </div>
+                        <div class="project-thumbnail-wrapper">
+                            <img src="Projects/datamining.png" alt="Data Mining" class="project-pop-img">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description" data-lang="en">Applied K-Means & PCA to classify global child
+                            mortality patterns.</p>
+                        <p class="project-description" data-lang="id" style="display:none">Menerapkan K-Means & PCA
+                            untuk klasifikasi kematian anak global.</p>
+
+                        <div class="project-info-box">
+                            <h4 data-lang="en">Goal</h4>
+                            <p data-lang="en">Cluster and predict global mortality risks.</p>
+                            <h4 data-lang="id" style="display:none">Tujuan</h4>
+                            <p data-lang="id" style="display:none">Klasterisasi dan prediksi risiko kematian global.</p>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://colab.research.google.com/drive/1c8tx4QtR3VBOckYIH8TlCd5Qq4EQVFhZ?usp=sharing"
+                                target="_blank" class="btn-grid">Google Colab</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <h2 class="section-title" data-lang="en">Publications</h2>
+            <h2 class="section-title" data-lang="id" style="display:none">Publikasi</h2>
+
+            <div class="pub-grid">
+                <!-- Publication Item 1 -->
+                <div class="pub-item">
+                    <div class="pub-visual">
+                        <img src="Publish/Paper.png" alt="Research Paper" class="pub-photo">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title" data-lang="en">Forecasting Kredit Konsumsi di Indonesia untuk Analisis
+                            Tren Ekonomi Domestik</h3>
+                        <h3 class="pub-title" data-lang="id" style="display:none">Forecasting Kredit Konsumsi di
+                            Indonesia untuk Analisis Tren Ekonomi Domestik</h3>
+
+                        <p class="pub-authors">Rasyid Abdurrahman, et al. (Universitas Padjadjaran)</p>
+
+                        <p class="pub-abstract" data-lang="en">Applied Holt’s Linear Trend to forecast consumer credit
+                            trends with a MAPE of 10.025%, providing insights for national financial stability.</p>
+                        <p class="pub-abstract" data-lang="id" style="display:none">Menerapkan Holt’s Linear Trend untuk
+                            meramalkan tren kredit konsumsi dengan MAPE 10,025%, memberikan wawasan bagi stabilitas
+                            keuangan nasional.</p>
+
+                        <div class="pub-keywords">
+                            <span>Kredit Konsumsi</span>
+                            <span>Forecasting</span>
+                            <span>Holt’s Linear Trend</span>
+                        </div>
+
+                        <div class="pub-actions">
+                            <a href="https://prosiding.statistics.unpad.ac.id/?journal=prosidingsns&page=article&op=view&path%5B%5D=338"
+                                target="_blank" class="btn-pub-glass">
+                                <span data-lang="en">Read Full Publication</span>
+                                <span data-lang="id" style="display:none">Baca Publikasi Lengkap</span>
+                                <img src="Assets_Logos/link.png" alt="Link" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication Item 2 -->
+                <div class="pub-item">
+                    <div class="pub-visual">
+                        <img src="Publish/rpubs.png" alt="RPubs Analysis" class="pub-photo">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title" data-lang="en">Analisis Data Panel Kasus Pneumonia Balita: Spatiotemporal
+                            Approach</h3>
+                        <h3 class="pub-title" data-lang="id" style="display:none">Analisis Data Panel Kasus Pneumonia
+                            Balita: Spatiotemporal Approach</h3>
+
+                        <p class="pub-abstract" data-lang="en">Analyzed pneumonia trends in 27 West Java districts
+                            (2021-2024). Identified risk clusters and micro-environmental determinants using Robust HAC
+                            Estimator.</p>
+                        <p class="pub-abstract" data-lang="id" style="display:none">Menganalisis tren pneumonia di 27
+                            kabupaten/kota Jawa Barat (2021-2024). Identifikasi klaster risiko dan determinan
+                            mikro-lingkungan menggunakan Robust HAC Estimator.</p>
+
+                        <div class="pub-keywords">
+                            <span>Data Panel</span>
+                            <span>Spatial Analysis</span>
+                            <span>Epidemiology</span>
+                            <span>Robust HAC</span>
+                        </div>
+
+                        <div class="pub-actions">
+                            <a href="https://rpubs.com/Rasyid/1381930" target="_blank" class="btn-pub-glass">
+                                <span data-lang="en">Read Full Publication</span>
+                                <span data-lang="id" style="display:none">Baca Publikasi Lengkap</span>
+                                <img src="Assets_Logos/link.png" alt="Link" class="btn-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-divider"></div>
+        <div class="container">
+            <h2 class="section-title" data-lang="en">Contact</h2>
+            <h2 class="section-title" data-lang="id" style="display:none">Kontak</h2>
+            <p class="section-subtitle" data-lang="en">Let's build something amazing together.</p>
+            <p class="section-subtitle" data-lang="id" style="display:none">Mari membangun sesuatu yang luar biasa
+                bersama.</p>
+
+            <div class="contact-grid">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6281281125877" target="_blank" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="Assets_Logos/wa.png" alt="WhatsApp">
+                    </div>
+                    <div class="contact-info">
+                        <h3>WhatsApp</h3>
+                        <p>0812-8112-5877</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/rasyid-abdurrahman-090144287" target="_blank" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="Assets_Logos/linkedin.png" alt="LinkedIn">
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Rasyid Abdurrahman</p>
+                    </div>
+                </a>
+
+                <!-- Gmail -->
+                <a href="mailto:rsyd.abdrrhmn@gmail.com" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="Assets_Logos/gmail.png" alt="Gmail">
+                    </div>
+                    <div class="contact-info">
+                        <h3>Gmail</h3>
+                        <p>rsyd.abdrrhmn@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/rasyidabdurrahman-dotcom" target="_blank" class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <img src="Assets_Logos/github.png" alt="GitHub">
+                    </div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>rasyidabdurrahman</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="copyright">&copy; 2026 Rasyid Abdurrahman. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
